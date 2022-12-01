@@ -3,14 +3,10 @@ const { createApp } = Vue;
 createApp({
     data() {
       return {
-        user: {
-            avatar: 'img/avatar_4.jpg',
-            name: 'Furkan'
-        },
         contacts: [
             {
                 name: 'Michele',
-                avatar: 'img/avatar_1.jpg',
+                avatar: 'imgs/avatar_1.jpg',
                 visible: true,
                 messages: [
                     {
@@ -32,7 +28,7 @@ createApp({
             },
             {
                 name: 'Fabio',
-                avatar: 'img/avatar_2.jpg',
+                avatar: 'imgs/avatar_2.jpg',
                 visible: true,
                 messages: [
                     {
@@ -54,7 +50,7 @@ createApp({
             },
             {
                 name: 'Samuele',
-                avatar: 'img/avatar_3.jpg',
+                avatar: 'imgs/avatar_3.jpg',
                 visible: true,
                 messages: [
                     {
@@ -76,7 +72,7 @@ createApp({
             },
             {
                 name: 'Alessandro B.',
-                avatar: 'img/avatar_4.jpg',
+                avatar: 'imgs/avatar_4.jpg',
                 visible: true,
                 messages: [
                     {
@@ -93,7 +89,7 @@ createApp({
             },
             {
                 name: 'Alessandro L.',
-                avatar: 'img/avatar_5.jpeg',
+                avatar: 'imgs/avatar_5.jpeg',
                 visible: true,
                 messages: [
                     {
@@ -110,7 +106,7 @@ createApp({
             },
             {
                 name: 'Claudia',
-                avatar: 'img/avatar_6.jpeg',
+                avatar: 'imgs/avatar_6.jpeg',
                 visible: true,
                 messages: [
                     {
@@ -131,8 +127,25 @@ createApp({
                 ],
             },
             {
+                name: 'Federico',
+                avatar: 'imgs/avatar_7.jpeg',
+                visible: true,
+                messages: [
+                    {
+                        date: '10/01/2020 15:30:55',
+                        message: 'Fai gli auguri a Martina che è il suo compleanno!',
+                        status: 'sent'
+                    },
+                    {
+                        date: '10/01/2020 15:50:00',
+                        message: 'Grazie per avermelo ricordato, le scrivo subito!',
+                        status: 'received'
+                    }
+                ],
+            },
+            {
                 name: 'Davide',
-                avatar: 'img/avatar_8.jpeg',
+                avatar: 'imgs/avatar_8.jpeg',
                 visible: true,
                 messages: [
                     {
@@ -152,11 +165,8 @@ createApp({
                     }
                 ],
             }
-            
         ]
-        
+
       }
-    },
-   
-    
+    }
   }).mount('#app');

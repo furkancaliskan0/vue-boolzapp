@@ -5,21 +5,21 @@
 }
 
 body{
-    font-family: 'Montserrat', 'sans-serif';
-    background-color: rgb(153, 158, 163);
+    font-family: sans-serif;
+    background-color:  #d7d7ce;
 }
 
 header{
     height: 10vh;
     width: 100%;
-    background-color: #01776c;
+    background-color:#059889;
 }
 
 main{
-    height: 95vh;
+    /* height: 95vh; */
     min-width: 1100px;
     margin: .5rem auto;
-    background-image: url(/imgs/mine.jpg);
+    background-color: brown;
     z-index: 2;
     position: absolute;
     top: 1vh;
@@ -30,10 +30,82 @@ main{
     font-size: 2rem;
     border-radius: 50%;
 }
+i{
+    color: #b1b1b1;
+    cursor: pointer;
+}
+.my-span-color{
+    color: #a2a0a0;
+}
 
-.notify-wrapper > p{
+
+.wrapper > p{
     font-size: .9rem;
 }
-.notify-wrapper > a{
+.wrapper > a{
     font-size: .6rem;
 }
+
+.contact-name > i{
+    font-size: 3rem;
+}
+.contact-name > img{
+    margin-right: .5rem;
+    height: 55px;
+    border-radius: 50%;
+}
+.contact-name-description > span{
+    font-size: .8rem;
+}
+.notify-container{
+    background-color: #8EDAFC;
+}
+.my-chat-area{
+    display: none;
+}
+
+.my-container{
+    height: 100%;
+}
+.my-container > .row{
+    height: 100%;
+}
+
+.boolzapp-search{
+    height: 22vh;
+}
+.boolzapp-contact{
+    height: 74vh;
+    overflow-y: scroll;
+}
+
+.my-contact-card{
+    min-height: 83px;
+}
+.my-contact-card:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+
+
+.my-row-write-text{
+    height: 60px;
+}
+.my-row-write-text input{
+    width: 34rem;
+}
+
+.my-message-color{
+    background-color: #D5F9BA;
+}
+
+.my-chat-view{
+    height: 82%;
+    background-image: url(../imgs/mine.jpg);
+    overflow-y: scroll;
+    
+}
+
+
+

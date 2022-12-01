@@ -21,15 +21,15 @@
     <header>
 
     </header>
-    <main id="app" class="bg-light">
+    <main id="app"  class="bg-light" >
         <div class="container-fluid my-container">
-            <div class="row">
+            <div class="row boolzapp-search">
                 <div class="col-5">
-                    <div class="row boolzapp-search">
+                    <div class="row">
                         <div class="col-12 bg-light d-flex align-items-center justify-content-between p-2">
                             <div class="contact-name d-flex align-items-center">
-                                <img src="imgs/avatar_1.jpg" alt="" class="ms-4">
-                                <p class="m-0">Furkan</p>
+                                <img src="imgs/avatar_2.jpg" alt="" class="ms-4 ">
+                                <p class="m-0">furkan</p>
                             </div>
                             <div class="icons-search text-secondary">
                                 <i class="fa-solid fa-circle-notch"></i>
@@ -37,9 +37,9 @@
                                 <i class="fa-solid fa-ellipsis-vertical"></i>
                             </div>
                         </div>
-                        <div class="col-12 d-flex notify-container">
+                        <div class="col-12 d-flex notify-containe bg-info">
                             <i class="fa-regular fa-bell-slash p-3 m-2 bg-white"></i>
-                            <div class="wrapper d-flex flex-column justify-content-center">
+                            <div class="notify-wrapper d-flex flex-column justify-content-center">
                                 <p class="m-0">Ricevere notifiche sui nuovi messaggi</p>
                                 <a href="#" class="text-dark">Attiva Notifiche desktop</a>
                             </div>
@@ -54,7 +54,7 @@
                         </div>
                     </div>
                     <div class="row boolzapp-contact" >
-                        <div v-for="(element, index) in contacts" class="col-12 bg-light d-flex align-items-center justify-content-between p-2 my-contact-card" @click="element.visible = !element.visible">
+                        <div v-for="(element, index) in contacts" class="col-12 bg-light d-flex align-items-center justify-content-between p-2  my-contact-card">
                             <div class="contact-name d-flex">
                                 <img :src="`img/avatar${element.avatar}.jpg`" alt="">
                                 <div class="contact-name-description d-flex flex-column justify-content-center">
@@ -73,7 +73,7 @@
                     <div class="row">
                         <div class="col-12 bg-secondary d-flex align-items-center justify-content-between p-2">
                             <div class="contact-name d-flex align-items-center">
-                                <img src="imgs/avatar_2.jpg" alt="" class="ms-4 me-2">
+                                <img src="imgs/avatar_1.jpg" alt="" class="ms-4 me-2">
                                 <div class="contact-name-description d-flex flex-column justify-content-center">
                                     <p class="m-0 fs-4">Furkan</p>
                                     <span class="text-light">Ultimo accesso ieri</span>
@@ -106,89 +106,4 @@
 </body>
 </html>
     
-    <!--<header>
-
-    </header>
-  <main id="app" class="bg-light">
-        <div class="container-fluid  my-container">
-            <div class="row">
-                <div class="col-5">
-                    <div class="row boolzapp-search">
-                        <div class="col-12 bg-secondary d-flex align-items-center justify-content-between p-2">
-                            <div class="contact-name d-flex align-items-center">
-                                <img src="imgs/avatar_2.jpg" alt="" class="ms-4 me-2">
-                                <p class="m-0">Furkan</p>
-                            </div>
-                            <div class="icons-search text-secondary">
-                                <i class="fa-solid fa-circle-notch"></i>
-                                <i class="fa-solid fa-message center-icon"></i>
-                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </div>
-                        </div>
-                        <div class="col-12 d-flex bg-info">
-                            <i class="fa-solid fa-bell-slash p-3 m-2 bg-white text-info"></i>
-                            <div class="wrapper d-flex flex-column justify-content-center ">
-                                <p class="m-0">Ricevere notifiche sui nuovi messaggi</p>
-                                <a href="#" class="text-secondary">Attiva Notifiche desktop</a>
-                            </div>
-                        </div>
-                        <div class="col-12 pt-2 bg-light">
-                            <div class="input-group mb-3">
-                                <span class="input-group-text bg-white">
-                                    <i class="fa-solid fa-magnifying-glass text-secondary"></i>
-                                </span>
-                                <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row boolzapp-contact" >
-                        <div v-for="(user, index) in contacts" class="col-12 bg-light d-flex align-items-center justify-content-between p-2 my-contact-card">
-                        <div class="col-12 bg-light d-flex align-items-center justify-content-between p-2">
-                            <div class="contact-name d-flex">
-                                <img :src="`imgs/avatar${user.avatar}.jpg`" alt="">
-                                <div class="contact-name-description d-flex flex-column justify-content-center">
-                                    <p class="m-0 fs-4">{{ user.name }}</p>
-                                    <span class="text-secondary">Ultimo messaggio inviato</span>
-                                </div>
-
-                            </div>
-                            <div class="contact-name-search">
-                                <span class="text-secondary">{{ user.messages[user.messages.length - 1].date }}</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-7">
-                    <div class="row">
-                        <div class="col-12 bg-secondary d-flex align-items-center justify-content-between p-2">
-                            <div class="contact-name d-flex align-items-center">
-                                <img src="imgs/avatar_2.jpg" alt="" class="ms-4 me-2">
-                                <div class="contact-name-description d-flex flex-column justify-content-center">
-                                    <p class="m-0 fs-4">Furkan</p>
-                                    <span class="text-light">Ultimo accesso ieri</span>
-                                </div>
-                            </div>
-                            <div class="contact-name-search text-white">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                                <i class="fa-solid fa-paperclip px-2"></i>
-                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row my-chat-view">
-
-                    </div>
-                    <div class="row my-row-write-text">
-                        <div class="col-12 d-flex align-items-center justify-content-evenly">
-                            <i class="fa-regular fa-face-smile"></i>
-                            <input class="rounded form-control" type="text" placeholder="Scrivi un messaggio">
-                            <i class="fa-solid fa-microphone"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <script src="js/main.js"></script>
-</body>
-</html> -->
+  
