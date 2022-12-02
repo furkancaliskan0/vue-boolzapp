@@ -182,7 +182,7 @@ const app = new Vue({
             }
             const answerObj ={
                 date: "10/10/22 16:11:20",
-                message: "Sta scrivendo...",
+                message: "ok",
                 status: "received"
             }
             this.currentUser.messages.push(myMessageObj);
