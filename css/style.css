@@ -6,7 +6,7 @@
 
 body{
     font-family: sans-serif;
-    background-color:  #d7d7ce;
+    background-color: #d7d7ce;
 }
 
 header{
@@ -16,33 +16,41 @@ header{
 }
 
 main{
-    /* height: 95vh; */
-    min-width: 1100px;
-    margin: .5rem auto;
-    background-color: brown;
-    z-index: 2;
-    position: absolute;
     top: 1vh;
     left: 50%;
     transform: translateX(-50%);
+    min-width: 1200px;
+    margin: .5rem auto;
+    z-index: 2;
+    position: absolute;
+}
+i{
+    color: #B1B1B1;
+    cursor: pointer;
+}
+.my-span-color{
+    color: #B1B1B1;
+}
+
+.my-container{
+    height: 100%;
+}
+.my-container > .row{
+    height: 100%;
 }
 .fa-bell-slash{
     font-size: 2rem;
     border-radius: 50%;
 }
-i{
-    color: #b1b1b1;
-    cursor: pointer;
-}
-.my-span-color{
-    color: #a2a0a0;
+.notify-container{
+    background-color:#8EDAFC;
 }
 
 
-.wrapper > p{
+.notify-wrapper > p{
     font-size: .9rem;
 }
-.wrapper > a{
+.notify-wrapper > a{
     font-size: .6rem;
 }
 
@@ -56,19 +64,6 @@ i{
 }
 .contact-name-description > span{
     font-size: .8rem;
-}
-.notify-container{
-    background-color: #8EDAFC;
-}
-.my-chat-area{
-    display: none;
-}
-
-.my-container{
-    height: 100%;
-}
-.my-container > .row{
-    height: 100%;
 }
 
 .boolzapp-search{
@@ -87,8 +82,6 @@ i{
     cursor: pointer;
 }
 
-
-
 .my-row-write-text{
     height: 60px;
 }
@@ -96,16 +89,15 @@ i{
     width: 34rem;
 }
 
+.my-chat-area{
+    display: none;
+}
 .my-message-color{
     background-color: #D5F9BA;
 }
 
 .my-chat-view{
-    height: 82%;
-    background-image: url(../imgs/mine.jpg);
+    height: 85%;
+    background-image: url(../img/mine.jpg);
     overflow-y: scroll;
-    
 }
-
-
-

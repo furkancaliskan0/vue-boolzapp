@@ -1,12 +1,12 @@
-const { createApp } = Vue;
-
-createApp({
-    data() {
-      return {
+const app = new Vue({
+    el: '#app',
+    data: {
+        currentUser: null,
+        textNewMessage: '',
         contacts: [
             {
                 name: 'Michele',
-                avatar: 'imgs/avatar_1.jpg',
+                avatar: '_1',
                 visible: true,
                 messages: [
                     {
@@ -28,7 +28,7 @@ createApp({
             },
             {
                 name: 'Fabio',
-                avatar: 'imgs/avatar_2.jpg',
+                avatar: '_2',
                 visible: true,
                 messages: [
                     {
@@ -48,9 +48,10 @@ createApp({
                     }
                 ],
             },
+
             {
                 name: 'Samuele',
-                avatar: 'imgs/avatar_3.jpg',
+                avatar: '_3',
                 visible: true,
                 messages: [
                     {
@@ -72,7 +73,7 @@ createApp({
             },
             {
                 name: 'Alessandro B.',
-                avatar: 'imgs/avatar_4.jpg',
+                avatar: '_4',
                 visible: true,
                 messages: [
                     {
@@ -89,7 +90,7 @@ createApp({
             },
             {
                 name: 'Alessandro L.',
-                avatar: 'imgs/avatar_5.jpeg',
+                avatar: '_5',
                 visible: true,
                 messages: [
                     {
@@ -106,7 +107,7 @@ createApp({
             },
             {
                 name: 'Claudia',
-                avatar: 'imgs/avatar_6.jpeg',
+                avatar: '_6',
                 visible: true,
                 messages: [
                     {
@@ -128,7 +129,7 @@ createApp({
             },
             {
                 name: 'Federico',
-                avatar: 'imgs/avatar_7.jpeg',
+                avatar: '_7',
                 visible: true,
                 messages: [
                     {
@@ -145,7 +146,7 @@ createApp({
             },
             {
                 name: 'Davide',
-                avatar: 'imgs/avatar_8.jpeg',
+                avatar: '_8',
                 visible: true,
                 messages: [
                     {
@@ -166,7 +167,11 @@ createApp({
                 ],
             }
         ]
-
-      }
+    },
+    methods: {
+        setUser(user){
+            this.currentUser = user;
+            
+        }
     }
-  }).mount('#app');
+}) 
