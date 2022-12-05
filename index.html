@@ -13,6 +13,7 @@
      <title>Boolzapp</title>
       <!-- Vue -->
       <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
      <!-- Custom style -->
     <link rel="stylesheet" href="css/style.css">
     <title>Boolz App</title>
@@ -54,6 +55,9 @@
                             </div>
                         </div>
                     </div>
+                    
+                <!-- CHAT RECENTI -->
+
                     <div class="row boolzapp-contact" >
                         <div v-for="(element, index) in contacts" class="col-12 bg-light d-flex align-items-center justify-content-between p-2 my-contact-card" @click="setUser(element)">
                             <div class="contact-name d-flex">
@@ -70,6 +74,8 @@
                         </div>
                     </div>
                 </div>
+
+             <!-- AREA CHAT APERTA -->
 
                 <div class="col-7 my-chat-area d-block " >
                 <div class="row ">

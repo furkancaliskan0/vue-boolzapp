@@ -188,7 +188,7 @@ const app = new Vue({
             this.currentUser.messages.push(myMessageObj);
             setTimeout(() =>{
                 this.currentUser.messages.push(answerObj);
-            },1500);
+            },1000);
             this.textNewMessage = "";
         }
     }
